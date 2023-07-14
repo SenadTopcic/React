@@ -1,0 +1,40 @@
+/* Styling the game board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #f3f3f3;
+  padding: 10px;
+}
+
+/* Styling the game cells */
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Styling the game status */
+.status {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Styling the reset button */
+.reset-button {
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}

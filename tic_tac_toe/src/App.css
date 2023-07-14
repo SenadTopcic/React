@@ -1,0 +1,89 @@
+/* Game container styles */
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0f0f0f;
+}
+
+/* Board container styles */
+.game-board {
+  margin-bottom: 20px;
+}
+
+/* Board styles */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-gap: 10px;
+}
+
+/* Square styles */
+.square {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  font-size: 48px;
+  background-color: #1c1c1c;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+
+/* Square hover styles */
+.square:hover {
+  transform: scale(1.05);
+  background-color: #282828;
+}
+
+/* 3D animation effect on click */
+.square:active {
+  transform: scale(0.95);
+  background-color: #212121;
+}
+
+/* Status styles */
+.status {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Game info styles */
+.game-info {
+  font-size: 18px;
+  color: #999999;
+  text-align: center;
+}
+
+/* Moves list styles */
+.game-info ol {
+  padding-left: 20px;
+}
+
+/* Move button styles */
+.game-info li button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #ffffff;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+/* Move button hover styles */
+.game-info li button:hover {
+  color: #dddddd;
+}
